@@ -1,8 +1,17 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
+  basePath: "/shift-ready",
+
   cacheComponents: false,
   partialPrefetching: false,
+
+  images: {
+    unoptimized: true,
+  },
+
   turbopack: {
     rules: {
       "*.css": {
@@ -14,3 +23,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
