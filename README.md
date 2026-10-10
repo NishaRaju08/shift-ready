@@ -13,8 +13,6 @@
   <img src="docs/screenshots/hero.png" alt="Shift Ready landing" width="920" />
 </p>
 
-<p align="center"><sub>Add <code>docs/screenshots/hero.png</code></sub></p>
-
 ---
 
 ## What it is
@@ -38,8 +36,6 @@ Shift Ready is a signed-in workspace for mid-migration teams. Paste a `package.j
   <img src="docs/screenshots/upgrade.png" alt="Upgrade scan" width="920" />
 </p>
 
-<p align="center"><sub><code>docs/screenshots/upgrade.png</code></sub></p>
-
 Target versions are **published npm releases only**, and must be newer than the installed version.
 
 ### Integrations & alternatives
@@ -48,13 +44,9 @@ Target versions are **published npm releases only**, and must be newer than the 
   <img src="docs/screenshots/integrations.png" alt="Integrations" width="920" />
 </p>
 
-<p align="center"><sub><code>docs/screenshots/integrations.png</code></sub></p>
-
 <p align="center">
   <img src="docs/screenshots/alternatives.png" alt="Alternatives" width="920" />
 </p>
-
-<p align="center"><sub><code>docs/screenshots/alternatives.png</code></sub></p>
 
 Results prefer GitHub, npm, and official docs. Shopping and unrelated domains are dropped.
 
@@ -64,8 +56,6 @@ Results prefer GitHub, npm, and official docs. Shopping and unrelated domains ar
   <img src="docs/screenshots/history.png" alt="History" width="920" />
 </p>
 
-<p align="center"><sub><code>docs/screenshots/history.png</code></sub></p>
-
 UP / IN / AL rows, type filters, relative time, **Inspect**.
 
 ### Share
@@ -74,7 +64,6 @@ UP / IN / AL rows, type filters, relative time, **Inspect**.
   <img src="docs/screenshots/share.png" alt="Public share" width="920" />
 </p>
 
-<p align="center"><sub><code>docs/screenshots/share.png</code></sub></p>
 
 Public `/s/{share_id}` — no login required once a finding is published.
 
