@@ -29,8 +29,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="relative min-h-full flex flex-col bg-background text-foreground">
+      <body
+        className="relative min-h-full flex flex-col bg-background text-foreground"
+        suppressHydrationWarning
+      >
         <Atmosphere />
         <div className="relative z-10 flex min-h-full flex-1 flex-col">{children}</div>
       </body>

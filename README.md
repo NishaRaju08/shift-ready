@@ -32,18 +32,6 @@ Shift Ready is a signed-in workspace for mid-migration teams. Paste a `package.j
 
 ## Product tour
 
-Replace each path with your screenshot. Keep the filename; the README will pick it up.
-
-### Workspace
-
-<p align="center">
-  <img src="docs/screenshots/workspace.png" alt="Workspace" width="920" />
-</p>
-
-<p align="center"><sub><code>docs/screenshots/workspace.png</code></sub></p>
-
-Signed-in home: left nav, top-right account, three shift cards, live score preview.
-
 ### Upgrade scan
 
 <p align="center">
@@ -89,16 +77,6 @@ UP / IN / AL rows, type filters, relative time, **Inspect**.
 <p align="center"><sub><code>docs/screenshots/share.png</code></sub></p>
 
 Public `/s/{share_id}` — no login required once a finding is published.
-
-### Mobile
-
-<p align="center">
-  <img src="docs/screenshots/mobile.png" alt="Mobile chrome" width="420" />
-</p>
-
-<p align="center"><sub><code>docs/screenshots/mobile.png</code></sub></p>
-
-Top bar + **Menu** drawer. Same routes as desktop.
 
 ---
 
