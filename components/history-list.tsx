@@ -1,16 +1,23 @@
 import Link from "next/link";
 import { LocalTime } from "@/components/local-time";
-import { Badge, Card, EmptyState } from "@/components/ui";
+import { Badge, Card } from "@/components/ui";
 import { frameworkById } from "@/lib/frameworks";
+import { TOOLS } from "@/lib/product";
 import { PROJECT_LABELS, type Project } from "@/lib/types";
 
 export function HistoryList({ projects }: { projects: Project[] }) {
   if (projects.length === 0) {
     return (
-      <EmptyState
-        title="No saved findings yet"
-        body="Run an upgrade, integration, or alternatives search and save it by name."
-      />
+      <div className="grid gap-3 md:grid-cols-3">
+        {TOOLS.map((tool) => (
+          <Link key={tool.href} href={tool.href} className="lift glass rounded-2xl p-5">
+            <Badge>{PROJECT_LABELS[tool.type]}</Badge>
+            <p className="mt-3 font-medium">{tool.title}</p>
+            <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{tool.body}</p>
+            <p className="mt-4 text-sm text-[var(--accent)]">Start this shift →</p>
+          </Link>
+        ))}
+      </div>
     );
   }
 

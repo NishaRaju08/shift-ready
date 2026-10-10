@@ -75,7 +75,7 @@ export function Badge({ children }: { children: ReactNode }) {
 
 export function EmptyState({ title, body }: { title: string; body: string }) {
   return (
-    <div className="rounded-2xl border border-dashed border-[var(--line)] px-6 py-12 text-center">
+    <div className="glass rounded-2xl px-6 py-8 text-center">
       <p className="text-sm font-medium">{title}</p>
       <p className="mt-2 text-sm text-[var(--muted)]">{body}</p>
     </div>

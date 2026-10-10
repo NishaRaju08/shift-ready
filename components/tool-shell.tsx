@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, type FormEvent, type ReactNode } from "react";
+import { PreviewPanel } from "@/components/preview-panel";
 import { ResultView } from "@/components/result-view";
 import { SaveProject } from "@/components/save-project";
-import { Button, EmptyState, ErrorText } from "@/components/ui";
+import { Button, ErrorText } from "@/components/ui";
 import type { ActionState, ProjectType, SearchPayload } from "@/lib/types";
 
 export function useSearchAction() {
@@ -61,7 +62,7 @@ export function ToolShell({
           <h1 className="mt-2 text-3xl font-semibold tracking-tight">{title}</h1>
           <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{blurb}</p>
         </div>
-        <form onSubmit={handleSubmit} className="grid gap-4">
+        <form onSubmit={handleSubmit} className="glass grid gap-4 rounded-2xl p-4">
           {children}
           <ErrorText>{error}</ErrorText>
           <Button type="submit" disabled={pending} className={pending ? "pulse-ring" : ""}>
@@ -76,10 +77,7 @@ export function ToolShell({
             <ResultView result={payload.result} />
           </div>
         ) : (
-          <EmptyState
-            title="Results show up here"
-            body="Run a search to pull official docs, sources, and notes for this stack."
-          />
+          <PreviewPanel type={type} />
         )}
       </section>
     </div>
